@@ -41,8 +41,12 @@ export default function Nav() {
   return (
     <nav className="sticky top-0 z-40 border-b border-line bg-bg/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center gap-4 px-4">
-        <a href="#home" className="shrink-0 py-3 font-mono text-sm font-bold text-fg">
-          <span className="text-green">&gt;_</span> {profile.handle}
+        <a href="#home" className="flex shrink-0 items-center gap-2 py-2.5 font-mono text-sm font-bold text-fg">
+          {/* same mark as public/favicon.svg */}
+          <span className="inline-flex items-center rounded-md border border-line bg-panel px-1.5 py-0.5 text-xs" aria-hidden="true">
+            AI<span className="ml-px h-[3px] w-2 self-end mb-[3px] bg-green" />
+          </span>
+          {profile.handle}
         </a>
         <div ref={strip} className="scrollbar-thin relative -mb-px flex flex-1 overflow-x-auto">
           {tabs.map((t) => (

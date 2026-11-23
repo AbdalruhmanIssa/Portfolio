@@ -66,8 +66,8 @@ export const featured = [
     name: 'TimeSheet',
     tagline: 'Project hours, two-step approvals and budgets',
     period: 'Oct 2026',
-    context: 'Personal project · Full stack',
-    role: 'Built end to end: .NET 10 API + React web app',
+    context: 'Client project · Finance company · Full stack',
+    role: 'Built end to end and delivered: .NET 10 API + React web app',
     summary:
       'Employees log hours on their projects, a manager approves them, then a director. Approved hours count against each project budget, and every role gets its own dashboard and reports.',
     highlights: [
